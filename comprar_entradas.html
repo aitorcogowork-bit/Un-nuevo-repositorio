@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entradas</title>
     <link rel="stylesheet" href="css/todos.css">
+    <link rel="stylesheet" href="css/comprar_entradas.css">
     <style>
         /* Estilos necesarios para que .general se vea igual que en inicio */
         /* Todos los estilos ahora están en todos.css */
@@ -31,5 +32,70 @@
         <li><a href="registro.html">Registrarse</a></li>
     </ul>
     </div>
+
+    <h2>Comprar Entradas</h2>
+    <section class="compras">
+        <form class="formulario-entradas">
+            <h3>Datos Personales</h3>
+            
+            <div class="rellenar">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+            </div>
+
+            <div class="rellenar">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required placeholder="Ingresa tus apellidos">
+            </div>
+
+            <div class="rellenar">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="+34 600 000 000">
+            </div>
+
+            <div class="rellenar">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+            </div>
+
+            <h3>Detalles del Evento</h3>
+
+            <div class="rellenar">
+                <label for="evento">Selecciona el Concierto:</label>
+                <select id="evento" name="evento" required>
+                    <option value="">-- Elige un evento --</option>
+                    <option value="madrid-nov">Independance Club - Madrid (15 Nov 2025)</option>
+                    <option value="barakaldo-may">Bizkaia Arena - Barakaldo (9 May 2026)</option>
+                    <option value="madrid-may">WiZink Center - Madrid (28 May 2026)</option>
+                    <option value="barcelona-may">Palau Sant Jordi - Barcelona (28 May 2026)</option>
+                    <option value="albacete-jun">Estadio José Copete - Albacete (6 Jun 2026)</option>
+                    <option value="murcia-jun13">Plaza de Toros - Murcia (13 Jun 2026)</option>
+                    <option value="murcia-jun14">Plaza de Toros - Murcia (14 Jun 2026)</option>
+                    <option value="sevilla-jun">Live Sur Stadium - Sevilla (26 Jun 2026)</option>
+                    <option value="fuengirola-jun">Marenostrum Fuengirola (27 Jun 2026)</option>
+                    <option value="gijon-jul">Gijón Life - Gijón (10 Jul 2026)</option>
+                </select>
+            </div>
+
+            <h3>Tipo de Entrada</h3>
+
+            <div class="seleccionar">
+                <label for="tipo-entrada">Selecciona el Tipo de Entrada:</label>
+                <select id="tipo-entrada" name="tipo-entrada" required>
+                    <option value="">-- Elige un tipo --</option>
+                    <option value="45">Estándar - 45€</option>
+                    <option value="85">Platinum - 85€</option>
+                    <option value="150">VIP - 150€</option>
+                </select>
+            </div>
+
+            <div class="selecionar">
+                <label for="cantidad">Número de Entradas:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1" required>
+            </div>
+
+            <button type="submit" class="comprar">Comprar Entradas</button>
+        </form>
+    </section>
 </body>
 </html>

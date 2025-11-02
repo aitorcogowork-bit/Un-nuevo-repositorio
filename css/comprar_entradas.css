@@ -1,0 +1,166 @@
+/* Estilos para la página de comprar entradas */
+h2 {
+    text-align: center;
+    color: #F0E6D2;
+    font-size: 3rem;
+    margin: 40px 0 30px 0;
+    text-shadow: 3px 3px 6px rgba(200, 155, 60, 0.5);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.compras {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.formulario-entradas {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.95), rgba(22, 33, 62, 0.95));
+    border: 3px solid #c89b3c;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 10px 40px rgba(200, 155, 60, 0.3),
+                0 0 20px rgba(200, 155, 60, 0.2);
+}
+
+.formulario-entradas h3 {
+    color: #c89b3c;
+    font-size: 1.8rem;
+    margin: 30px 0 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #c89b3c;
+    padding-bottom: 10px;
+}
+
+.formulario-entradas h3:first-child {
+    margin-top: 0;
+}
+
+/* Pide el usuario: Detalles del Evento y Tipo de Entrada con texto blanco */
+.formulario-entradas h3:not(:first-child) {
+    color: #F0E6D2;
+}
+
+.rellenar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.rellenar label {
+    display: flex;
+    color: #F0E6D2;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.rellenar input[type="text"],
+.rellenar input[type="tel"],
+.rellenar input[type="email"],
+.rellenar input[type="number"],
+.rellenar select {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(15, 52, 96, 0.5);
+    border: 2px solid rgba(200, 155, 60, 0.3);
+    border-radius: 10px;
+    color: #F0E6D2;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.rellenar input[type="text"]:focus,
+.rellenar input[type="tel"]:focus,
+.rellenar input[type="email"]:focus,
+.rellenar input[type="number"]:focus,
+.rellenar select:focus {
+    outline: none;
+    border-color: #c89b3c;
+    box-shadow: 0 0 15px rgba(200, 155, 60, 0.4);
+    background: rgba(15, 52, 96, 0.7);
+}
+
+/* Grupo para select e input de número (Tipo de Entrada) */
+.selecionar,
+.seleccionar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.selecionar label,
+.seleccionar label {
+    display: flex;
+    color: #F0E6D2; /* letras blancas */
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.selecionar select,
+.seleccionar select {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(15, 52, 96, 0.5);
+    border: 2px solid rgba(200, 155, 60, 0.3);
+    border-radius: 10px;
+    color: #F0E6D2;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.selecionar select:focus,
+.seleccionar select:focus {
+    outline: none;
+    border-color: #c89b3c;
+    box-shadow: 0 0 15px rgba(200, 155, 60, 0.4);
+    background: rgba(15, 52, 96, 0.7);
+}
+
+.selecionar select option,
+.seleccionar select option {
+    background: #1a1a2e;
+    color: #F0E6D2;
+}
+
+/* Input de número */
+.selecionar input[type="number"],
+.seleccionar input[type="number"] {
+    width: 120px;
+    padding: 12px 15px;
+    background: rgba(15, 52, 96, 0.5);
+    border: 2px solid rgba(200, 155, 60, 0.3);
+    border-radius: 10px;
+    color: #F0E6D2;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.comprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, #c89b3c, #a67c2c);
+    border: none;
+    border-radius: 12px;
+    color: #1a1a2e;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
