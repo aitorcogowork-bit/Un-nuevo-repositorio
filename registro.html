@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
     <link rel="stylesheet" href="css/todos.css">
+    <link rel="stylesheet" href="css/registro.css">
     <style>
         /* Estilos necesarios para que .general se vea igual que en inicio */
         /* Todos los estilos ahora están en todos.css */
@@ -31,5 +32,44 @@
         <li><a href="registro.html">Registrarse</a></li>
     </ul>
     </div>
+    <h2>Registro de Usuario</h2>
+    <section class="registro">
+        <form class="formulario">
+            <div class="rellenar">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+            </div>
+            <div class="rellenar">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required placeholder="Ingresa tus apellidos">
+            </div>
+             <div class="rellenar">
+                <label for="usuario">Nombre de Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required placeholder="Elige un nombre de usuario">
+            </div>
+              <div class="rellenar">
+                <label for="fecha de nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha de nacimiento" name="fecha de nacimiento" required>
+            </div>
+            <div class="rellenar">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+            </div>
+            <div class="rellenar">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="+34 600 000 000">
+            </div>
+             <div class="rellenar">
+                <label for="Sexo">Sexo:</label>
+                <select id="Sexo" name="Sexo" required>
+                    <option value="">Selecciona tu sexo</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <button type="submit">Registrarse</button>
+        </form>
+    </section>
 </body>
 </html>
