@@ -1,0 +1,122 @@
+/* Contenedor principal de la discografía */
+.discografia-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Título principal */
+.titulo-discografia {
+    text-align: center;
+    color: #F0E6D2;
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(45deg, #C89B3C, #F0E6D2, #C8AA6E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Tabla de discografía */
+.tabla-discografia {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Encabezados de la tabla */
+.tabla-discografia thead th {
+    background: linear-gradient(135deg, #C89B3C, #C8AA6E);
+    color: #000;
+    font-weight: bold;
+    padding: 20px 15px;
+    text-align: left;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    border-bottom: 2px solid #F0E6D2;
+}
+
+/* Celdas de la tabla */
+.tabla-discografia tbody td {
+    padding: 15px;
+    color: #F0E6D2;
+    border-bottom: 1px solid rgba(240, 230, 210, 0.2);
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    transition: background-color 0.3s ease;
+}
+
+/* Filas de la tabla */
+.tabla-discografia tbody tr:hover {
+    background: rgba(200, 155, 60, 0.1);
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+/* Alternancia de colores en filas */
+.tabla-discografia tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Primera columna (nombres) más ancha */
+.tabla-discografia th:first-child,
+.tabla-discografia td:first-child {
+    width: 50%;
+    font-weight: bold;
+}
+
+/* Segunda columna (fechas) */
+.tabla-discografia th:nth-child(2),
+.tabla-discografia td:nth-child(2) {
+    width: 25%;
+    text-align: center;
+}
+
+/* Tercera columna (duración) */
+.tabla-discografia th:last-child,
+.tabla-discografia td:last-child {
+    width: 25%;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .discografia-container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    
+    .tabla-discografia thead th,
+    .tabla-discografia tbody td {
+        padding: 10px 8px;
+    }
+    
+    .tabla-discografia th:first-child,
+    .tabla-discografia td:first-child {
+        width: 45%;
+    }
+    
+    .tabla-discografia th:nth-child(2),
+    .tabla-discografia td:nth-child(2),
+    .tabla-discografia th:last-child,
+    .tabla-discografia td:last-child {
+        width: 27.5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .tabla-discografia {
+        font-size: 0.8rem;
+    }
+    
+    .tabla-discografia thead th,
+    .tabla-discografia tbody td {
+        padding: 8px 5px;
+    }
+}
