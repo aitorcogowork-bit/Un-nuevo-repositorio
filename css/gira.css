@@ -1,0 +1,52 @@
+/* titulo de la tabla */
+h2 {
+    text-align: center;
+    color: #F0E6D2;
+    font-size: 3rem;
+    margin: 40px 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Contenedor de la tabla */
+table {
+    width: 80%; 
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.95), rgba(22, 33, 62, 0.95));
+    border-radius: 15px;
+    overflow: hidden;
+}
+/* Encabezado de la tabla */
+thead {
+    background: linear-gradient(135deg, #c89b3c, #a67c2c);
+}
+
+thead th {
+    padding: 20px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: left;
+    border-right: 2px solid rgba(26, 26, 46, 0.2);
+}
+
+/*tamaño dentro de las celdas*/
+tbody td {
+    padding: 18px 15px;
+    color: #F0E6D2;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Primera columna (Nombre) */
+tbody td:first-child {
+    font-weight: bold;
+}
+
+/* Diferente color de fondo para filas */
+tbody tr:nth-child(even) {
+    background: rgba(15, 52, 96, 0.3);
+}
+
