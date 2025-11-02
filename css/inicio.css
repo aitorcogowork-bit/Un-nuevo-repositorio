@@ -52,7 +52,7 @@ body::before {
 .titulo-bienvenida {
     font-size: clamp(2.5rem, 6vw, 4.5rem);
     font-weight: 900;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 40px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
     background: linear-gradient(45deg, #C89B3C, #F0E6D2, #C8AA6E);
@@ -178,9 +178,9 @@ body::before {
 }
 
 .noticias img {
-    width: 100%;
-    height: 600px;
-    object-fit: contain;
+    width: 1160px;
+    height: 690px;
+    object-fit: cover;
     display: block;
     border-radius: 8px;
 }
