@@ -1,8 +1,43 @@
 * {
     margin: 0;
 }
+
+/* Fondo y efectos para que se vea como inicio.html */
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Efecto de fondo animado */
+body::before {
+    content: '';
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(200, 155, 60, 0.1) 0%, transparent 50%);
+    animation: rotate 20s linear infinite;
+    z-index: -1;
+    pointer-events: none;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.general {
+    position: relative;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+}
 .general .encabezado {
-    background-color: black;
+    background: rgba(0, 0, 0, 0.8);
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
@@ -15,12 +50,15 @@
     width: 8vw;
     height: auto;
 }
-.general .encabezado h2 {
-    color: white;
+.general .encabezado h1, .general .encabezado h2 {
+    color: #F0E6D2;
     margin: 0;
     text-align: center;
     grid-column: 2;
     font-size: 5vw;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 .general ul{
     display: flex;
