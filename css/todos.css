@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+}
+.general .encabezado {
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 20px;
+}
+.general .encabezado img {
+    margin-right: 20px;
+    grid-column: 1;
+    height: 60px;
+    width: 8vw;
+    height: auto;
+}
+.general .encabezado h2 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    grid-column: 2;
+    font-size: 5vw;
+}
+.general ul{
+    display: flex;
+    background-color: black;
+    justify-content: space-between; /* Distribuye equitativamente */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.opciones li{
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    padding: clamp(8px, 2vw, 15px) clamp(10px, 3vw, 30px); /* Padding responsive */
+    flex: 1; /* Cada elemento ocupa el mismo espacio */
+    font-size: clamp(0.8rem, 1.5vw, 1.1rem); /* Font-size también responsive */
+}  
+.general ul a{
+    color: white;
+    text-decoration: none;
+    display: block; /* Para que el enlace ocupe todo el li */
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+
+.general ul a:hover {
+    background-color: #333;
+}
+
+/* Estilos para el menú desplegable */
+.general .dropdown {
+    position: relative; /* Necesario para posicionar el submenu */
+}
+
+.general .submenu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 100%; /* Aparece justo debajo del elemento padre */
+    left: 0;
+    right: 0; /* Se extiende hasta el borde derecho del padre */
+    width: 100%; /* Ocupa el 100% del ancho del elemento padre */
+    background-color: #222; /* Un poco más claro que el menú principal */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000; /* Para que aparezca encima de otros elementos */
+    flex-direction: column; /* Submenu en columna */
+    border: 1px solid #444;
+    box-sizing: border-box; /* Incluye padding y borders en el width */
+}
+
+.general .submenu li {
+    border: none; /* Quitar bordes de los elementos del submenu */
+    flex: none; /* No usar flex: 1 en el submenu */
+    padding: 0;
+}
+
+.general .submenu a {
+    padding: 6px 4px;
+    border-bottom: 1px solid #444;
+    transition: background-color 0.3s ease;
+}
+
+.general .submenu a:hover {
+    background-color: #444;
+}
+
+/* Mostrar el submenu al hacer hover en el dropdown */
+.general .dropdown:hover .submenu {
+    display: flex;
+}
+
+/* Indicador visual de que hay un submenu */
+.general .dropdown > a::after {
+    content: " ▼";
+    font-size: 0.8em;
+}
+
+/* Media queries para padding específico por dispositivo */
+/* Pantallas grandes (desktop) */
+@media (min-width: 1200px) {
+    .opciones li {
+        padding: 15px 25px;
+    }
+}
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .opciones li {
+        padding: 12px 20px;
+    }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .opciones li {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
