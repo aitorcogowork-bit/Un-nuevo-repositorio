@@ -43,11 +43,6 @@ h2 {
     margin-top: 0;
 }
 
-/* Pide el usuario: Detalles del Evento y Tipo de Entrada con texto blanco */
-.formulario-entradas h3:not(:first-child) {
-    color: #F0E6D2;
-}
-
 .rellenar {
     display: flex;
     flex-direction: column;
@@ -55,7 +50,7 @@ h2 {
 }
 
 .rellenar label {
-    display: flex;
+
     color: #F0E6D2;
     font-size: 1.1rem;
     margin-bottom: 8px;
@@ -88,24 +83,20 @@ h2 {
     background: rgba(15, 52, 96, 0.7);
 }
 
-/* Grupo para select e input de número (Tipo de Entrada) */
-.selecionar,
 .seleccionar {
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
 }
 
-.selecionar label,
 .seleccionar label {
     display: flex;
-    color: #F0E6D2; /* letras blancas */
+    color: #F0E6D2;
     font-size: 1.1rem;
     margin-bottom: 8px;
     font-weight: 500;
 }
 
-.selecionar select,
 .seleccionar select {
     width: 100%;
     padding: 12px 15px;
@@ -118,7 +109,6 @@ h2 {
     cursor: pointer;
 }
 
-.selecionar select:focus,
 .seleccionar select:focus {
     outline: none;
     border-color: #c89b3c;
@@ -126,14 +116,11 @@ h2 {
     background: rgba(15, 52, 96, 0.7);
 }
 
-.selecionar select option,
 .seleccionar select option {
     background: #1a1a2e;
     color: #F0E6D2;
 }
 
-/* Input de número */
-.selecionar input[type="number"],
 .seleccionar input[type="number"] {
     width: 120px;
     padding: 12px 15px;
