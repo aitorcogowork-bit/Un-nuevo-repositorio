@@ -38,26 +38,27 @@ body {
     background-color: black;
     padding: 0;
     margin: 0;
+
+}
+.general li:hover{
+    background-color: #333;
 }
 .opciones li{
     border: 1px solid rgb(255, 255, 255);
     text-align: center;
     padding: clamp(8px, 2vw, 15px) clamp(10px, 3vw, 30px);
-    flex: 1; /* Cada elemento ocupa el mismo espacio */
+    flex: 1; 
     font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+    transition: background-color 0.3s ease;
 }  
 .general ul a{
     color: white;
     text-decoration: none;
-    display: block; /* Para que el enlace ocupe todo el li */
-    transition: background-color 0.3s ease;
+    display: block; 
+   
 }
 
-.general ul a:hover {
-    background-color: #333;
-}
 
-/* Estilos para el menú desplegable */
 .general .dropdown {
     position: relative;
 }

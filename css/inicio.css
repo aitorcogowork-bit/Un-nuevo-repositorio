@@ -24,21 +24,21 @@ body {
     font-weight: 900;
     color: #ffffff;
     margin-bottom: 40px;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-    background: linear-gradient(45deg, #C89B3C, #F0E6D2, #C8AA6E);
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0.356);
+    background: linear-gradient(45deg, #C89B3C, #aa8e57, #C8AA6E);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: titleGlow 3s ease-in-out infinite alternate;
+    animation: ElPálpitoDelTítulo 1s ease-in-out infinite alternate;
     line-height: 1.2;
 }
 
-@keyframes titleGlow {
+@keyframes ElPálpitoDelTítulo {
     from { 
         filter: drop-shadow(0 0 10px rgba(200, 155, 60, 0.6));
     }
     to { 
-        filter: drop-shadow(0 0 25px rgba(200, 155, 60, 0.9));
+        filter: drop-shadow(0 0 20px rgba(240, 184, 63, 0.9));
     }
 }
 
@@ -77,7 +77,6 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Títulos clickeables */
 .titulo-seccion {
     background: #444;
     color: white;
@@ -89,7 +88,6 @@ body {
     align-items: center;
     font-size: 1.8rem;
     font-weight: bold;
-    transition: background 0.3s ease;
 }
 
 .titulo-seccion:hover {

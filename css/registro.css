@@ -94,19 +94,16 @@ h2 {
     color: #F0E6D2;
 }
 
-/* Placeholder styles */
 .rellenar input::placeholder {
     color: rgba(240, 230, 210, 0.6);
     font-style: italic;
 }
 
-/* Input de fecha específico */
 .rellenar input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(1);
     cursor: pointer;
 }
 
-/* Botón de registro */
 .registrar,
 button[type="submit"],
 input[type="submit"] {
@@ -141,44 +138,4 @@ button[type="submit"]:active,
 input[type="submit"]:active {
     transform: translateY(0);
     box-shadow: 0 4px 15px rgba(200, 155, 60, 0.2);
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .formulario {
-        padding: 20px;
-        margin: 10px;
-    }
-    
-    h2 {
-        font-size: 2.2rem;
-    }
-    
-    .rellenar label {
-        font-size: 1rem;
-    }
-    
-    .rellenar input,
-    .rellenar select {
-        padding: 10px 12px;
-        font-size: 0.9rem;
-    }
-    
-    .registrar,
-    button[type="submit"],
-    input[type="submit"] {
-        font-size: 1.2rem;
-        padding: 16px;
-    }
-}
- button[type="submit"] {
-    border: none;
-    background: linear-gradient(135deg, #c89b3c, #a67c2c);
-    color: #1a1a2e;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
