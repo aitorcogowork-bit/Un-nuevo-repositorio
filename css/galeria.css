@@ -8,13 +8,29 @@ h2 {
     letter-spacing: 2px;
 }
 
+<<<<<<< HEAD
 .galeria {
+=======
+/* Contenedor de la galería con grid */
+.galeria,
+.galeria-videos {
+>>>>>>> Un-nuevo_repositorio/master
     display: grid;
     max-width: 1400px;
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .galeria img {
+=======
+.galeria-videos {
+    margin-bottom: 60px;
+}
+
+/* Estilos para las imágenes y videos */
+.galeria img,
+.galeria-videos video {
+>>>>>>> Un-nuevo_repositorio/master
     width: 650px;
     height: 350px;
     object-fit: cover;
