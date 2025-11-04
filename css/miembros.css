@@ -26,7 +26,6 @@
 }
 
 .cuadrados:hover {
-    transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(200, 155, 60, 0.4);
     border-color: #f0d97c;
 }

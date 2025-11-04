@@ -1,4 +1,3 @@
-/* Estilos para la página de comprar entradas */
 h2 {
     text-align: center;
     color: #F0E6D2;
@@ -37,10 +36,6 @@ h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-bottom: 2px solid #c89b3c;
     padding-bottom: 10px;
-}
-
-.formulario-entradas h3:first-child {
-    margin-top: 0;
 }
 
 .rellenar {
