@@ -41,30 +41,79 @@
 
     <h2>Galería de Videos</h2>
     <section class="galeria-videos">
-        <video controls poster="fotos/galeria11.jpg" preload="metadata">
-            <source src="videos/La Oreja de Van Gogh  20 de Enero (Official Video).mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de videos.
-        </video>
-        <video controls poster="fotos/galeria13.jpg" preload="metadata">
-            <source src="videos/La Oreja de Van Gogh  El Primer Dia del Resto de Mi Vida (Primera Fila).mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de videos.
-        </video>
-        <video controls poster="fotos/galeria16.jpg" preload="metadata">
-            <source src="videos/La Oreja de Van Gogh  Inmortal (Vídeo Oficial).mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de videos.
-        </video>
-        <video controls poster="fotos/galeria18.jpg" preload="metadata">
-            <source src="videos/La Oreja de Van Gogh  Jueves (Vídeo Oficial).mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de videos.
-        </video>
-        <video controls poster="fotos/galeria19.jpg" preload="metadata">
-            <source src="videos/La Oreja de Van Gogh  Muñeca De Trapo (VideoClip).mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de videos.
-        </video>
-        <video controls poster="fotos/galeria20.jpg" preload="metadata">
-            <source src="videos/La Oreja de Van Gogh  Puedes Contar Conmigo (Vídeo Oficial).mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de videos.
-        </video>
+        <div class="video-container">
+            <video controls poster="fotos/galeria11.jpg" preload="metadata">
+                <source src="videos/La Oreja de Van Gogh  20 de Enero (Official Video).mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+            <div class="play-overlay">
+                <div class="play-button">▶</div>
+            </div>
+        </div>
+        <div class="video-container">
+            <video controls poster="fotos/galeria13.jpg" preload="metadata">
+                <source src="videos/La Oreja de Van Gogh  El Primer Dia del Resto de Mi Vida (Primera Fila).mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+            <div class="play-overlay">
+                <div class="play-button">▶</div>
+            </div>
+        </div>
+        <div class="video-container">
+            <video controls poster="fotos/galeria16.jpg" preload="metadata">
+                <source src="videos/La Oreja de Van Gogh  Inmortal (Vídeo Oficial).mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+            <div class="play-overlay">
+                <div class="play-button">▶</div>
+            </div>
+        </div>
+        <div class="video-container">
+            <video controls poster="fotos/galeria18.jpg" preload="metadata">
+                <source src="videos/La Oreja de Van Gogh  Jueves (Vídeo Oficial).mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+            <div class="play-overlay">
+                <div class="play-button">▶</div>
+            </div>
+        </div>
+        <div class="video-container">
+            <video controls poster="fotos/galeria19.jpg" preload="metadata">
+                <source src="videos/La Oreja de Van Gogh  Muñeca De Trapo (VideoClip).mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+            <div class="play-overlay">
+                <div class="play-button">▶</div>
+            </div>
+        </div>
+        <div class="video-container">
+            <video controls poster="fotos/galeria20.jpg" preload="metadata">
+                <source src="videos/La Oreja de Van Gogh  Puedes Contar Conmigo (Vídeo Oficial).mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+            <div class="play-overlay">
+                <div class="play-button">▶</div>
+            </div>
+        </div>
     </section>
+
+    <script>
+        document.querySelectorAll('.video-container').forEach(container => {
+            const video = container.querySelector('video');
+            const overlay = container.querySelector('.play-overlay');
+            
+            video.addEventListener('play', () => {
+                overlay.style.display = 'none';
+            });
+            
+            video.addEventListener('pause', () => {
+                overlay.style.display = 'flex';
+            });
+            
+            video.addEventListener('ended', () => {
+                overlay.style.display = 'flex';
+            });
+        });
+    </script>
 </body>
 </html>
